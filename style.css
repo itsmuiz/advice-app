@@ -1,0 +1,66 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bbc6fa;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.app{
+    padding: 2rem 1rem;
+    height: max-content;
+    width: max-content;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 #0000008f;
+}
+.app h1{
+    position: relative;
+}
+.app p{
+    width: 50vw;
+}
+.app button{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #bbc6fa;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.app button:hover{
+    background: #fff;
+    color: #bbc6fa;
+}
+
+.app span{}
+
+.app h1::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    right: 20%;
+    width: 60%;
+    height: 2px;
+    border-radius: 10px;
+    background: #bbc6fa;
+}
+
+.app #quote::before, .app #quote::after{
+    content: '"';
+}
